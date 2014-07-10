@@ -50,7 +50,7 @@
 #pragma mark - UITableView Data Source
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 9;
+    return 9 * 2; // 2 ~ 3단 출력
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -60,9 +60,10 @@
     if (!cell) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:cellIdeintifier];
     }
-    
-    cell.textLabel.text = [NSString stringWithFormat:@"%d x %d =", 2, indexPath.row + 1];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%d", 2 * (indexPath.row + 1)];
+    NSUInteger column = (indexPath.row / 9) + 2; // 2단 부터니까 + 2
+    NSUInteger row = (indexPath.row % 9) + 1; // 1 부터니까 + 1
+    cell.textLabel.text = [NSString stringWithFormat:@"%d x %d =", column, row];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%d", column * row];
     return cell;
 }
 
