@@ -19,6 +19,8 @@
 		4F6D6CD5196E281700F713B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F6D6CBD196E281700F713B5 /* UIKit.framework */; };
 		4F6D6CDD196E281700F713B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F6D6CDB196E281700F713B5 /* InfoPlist.strings */; };
 		4F6D6CDF196E281700F713B5 /* KKUITableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F6D6CDE196E281700F713B5 /* KKUITableViewTests.m */; };
+		4F6D6CEB196E29C600F713B5 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F6D6CE9196E29C600F713B5 /* RootViewController.m */; };
+		4F6D6CEC196E29C600F713B5 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F6D6CEA196E29C600F713B5 /* RootViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		4F6D6CDA196E281700F713B5 /* KKUITableViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KKUITableViewTests-Info.plist"; sourceTree = "<group>"; };
 		4F6D6CDC196E281700F713B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4F6D6CDE196E281700F713B5 /* KKUITableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKUITableViewTests.m; sourceTree = "<group>"; };
+		4F6D6CE8196E29C600F713B5 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		4F6D6CE9196E29C600F713B5 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		4F6D6CEA196E29C600F713B5 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +116,9 @@
 				4F6D6CC9196E281700F713B5 /* AppDelegate.m */,
 				4F6D6CCB196E281700F713B5 /* Images.xcassets */,
 				4F6D6CC0196E281700F713B5 /* Supporting Files */,
+				4F6D6CE8196E29C600F713B5 /* RootViewController.h */,
+				4F6D6CE9196E29C600F713B5 /* RootViewController.m */,
+				4F6D6CEA196E29C600F713B5 /* RootViewController.xib */,
 			);
 			path = KKUITableView;
 			sourceTree = "<group>";
@@ -221,6 +229,7 @@
 			files = (
 				4F6D6CC4196E281700F713B5 /* InfoPlist.strings in Resources */,
 				4F6D6CCC196E281700F713B5 /* Images.xcassets in Resources */,
+				4F6D6CEC196E29C600F713B5 /* RootViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +250,7 @@
 			files = (
 				4F6D6CCA196E281700F713B5 /* AppDelegate.m in Sources */,
 				4F6D6CC6196E281700F713B5 /* main.m in Sources */,
+				4F6D6CEB196E29C600F713B5 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
