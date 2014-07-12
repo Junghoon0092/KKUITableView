@@ -53,7 +53,7 @@
 #pragma mark - UITableView Data Source
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 9 * 20; // 2 ~ 3단 출력 // 제가 간단하게 20단 출력으로 변경해줌
+    return 9 * 8; // 99단은 9단까지
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
