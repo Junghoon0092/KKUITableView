@@ -47,6 +47,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Methods
+
+
 #pragma mark - UITableView Data Source
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -67,5 +70,11 @@
     return cell;
 }
 
+#pragma mark - UITableView Delegate Method
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"셀이 선택됩니다. 행:%d",  indexPath.row);
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
 
 @end
